@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#171717"
+    tools:context=".Home">
+    <!-- User-Home-page-Activity -->
+
+    <ImageButton
+        android:id="@+id/logoutHome"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="322dp"
+        android:layout_marginBottom="652dp"
+        android:background="#171717"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04"
+        app:srcCompat="@drawable/elec"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/divider3"
+        android:layout_width="370dp"
+        android:layout_height="2dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="580dp"
+        android:background="#FF5722"></TextView>
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchShed"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="587dp"
+        android:background="#FFFF"
+        app:queryHint="Search here..." />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="538dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="19dp"
+        android:textColor="#FFFFFF">
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>
